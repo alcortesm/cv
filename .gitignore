@@ -1,0 +1,9 @@
+# In .gitignore
+*.aux
+*.log
+*.dvi
+*.swp
+*.fdb_latexmk
+*.fls
+*.pdf
+*.ps
