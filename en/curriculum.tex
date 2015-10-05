@@ -11,7 +11,8 @@
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[green]{classic}                % idem
+\moderncvtheme[blue]{classic}                % idem
 
 \usepackage{CJKutf8}
 
@@ -34,7 +35,7 @@
 \title{Curriculum Vitae}               % optional, remove the line if not wanted
 \address{Calle Estella 3, 3A}{Las Tablas, Madrid, Spain}    % optional, remove the line if not wanted
 \mobile{+34 600 42 77 57}                    % optional, remove the line if not wanted
-\phone{+34 91 750 86 44}                      % optional, remove the line if not wanted
+%\phone{+34 91 750 86 44}                      % optional, remove the line if not wanted
 %\fax{<Fax number>}                          % optional, remove the line if not wanted
 \email{alcortesm@gmail.com}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
@@ -52,31 +53,68 @@
 
 %Section
 \section{Info}
-\cvcomputer{Birth}{\small 1977-05-05 (Madrid, Spain)\normalsize}{Citizenship}{\small Spanish\normalsize}
-\cvcomputer{D. License}{\small B \normalsize}{Skype}{\small alberto.cortes.martin\normalsize}
-\cvcomputer{GitHub}{\small \url{https://github.com/alcortesm}\normalsize}{LinkedIn}{\small \url{<Link to profile>}\normalsize}
+\cvline{Birth}{\small 1977-05-05 (Madrid, Spain)\normalsize}
+\cvline{Citizenship}{\small Spanish\normalsize}
+\cvline{GitHub}{\small \url{https://github.com/alcortesm}\normalsize}
+\cvline{ResearcherId}{\url{http://www.researcherid.com/rid/L-5343-2014}}
+\cvline{LinkedIn}{\small \url{https://www.linkedin.com/in/alcortesm}\normalsize}
+\cvline{Skype}{\small alberto.cortes.martin\normalsize}
+\cvline{Driver's License}{\small B \normalsize}
 
 %Section
 \section{Desidered employment and Skills}
 \cvline{}{\Large System Programming}
-\cvline{}{\small I am a Linux C programmer with a growing interest for the Go programming language. }
+
+\cvline{}{\small I am a Linux C programmer with a growing interest in the Go
+  programming language and I am looking for new job opportunities inside and
+  outside academia.  \newline Over the years as a university researcher I have
+  develop keen critical thinking skills and a high level of autodidacticism.
+  Working on international research projects has given me the oportunity to
+  colaborate on a daily basis with different people, universitites, research
+  institutes and companies across Europe; tipically, remote meetings and
+  conference calls were the norm, with one or two buissnes travels per year.
+  \newline As a teacher I have develop a high understanding of the core
+  concepts of computation and networking. I have also improve my writing skills
+  and my English as I have been teaching in English for the last three years.
+  The daily conctact with the students has help me to keep an open mind and my
+  youth enthusiasm while working for a large university has teach me the ins
+  and outs of corporate life: business relationships, politics, conflicts,
+organization, meetings\ldots}
+
 
 %Section
 \section{Computer Skills}
 \cvline{Languages}{C, C++, Java, bash, octave, Go. Some years ago: Lua, Lisp, C\#, Perl, SQL, Python, Scheme, Gopher, SR, Prolog}
-\cvline{Platforms}{Linux, Plan9 (both in userland and kernel). Some years ago: Windows XP, Symbian, Windows Mobile}
-\cvline{Tools}{make, ant, git, \LaTeX, \TeX, vim, Omnet++, GnuPlot, JUnit. Some years ago: ns2, Emacs, Corba}
+\cvline{OOs}{Linux, Plan9 (both in userland and kernel). Some years ago: Windows XP, Symbian, Windows Mobile}
+\cvline{Tools and Frameworks}{make, ant, git, tmux, \LaTeX, \TeX, vim, Omnet++, GnuPlot, JUnit, SWING, sockets, pthreads, tcpdump, Moodle. Some years ago: ns2, Emacs, Corba}
 \cvline{Protocols}{IPv4, TCP, UDP, SCTP, POP3, IMAP, Telnet, HTTP, FTP, IRC, LLMNR, 802.11b/g, Ethernet}
 
 %Section
 \section{Experience}
-\subsection{Academic}
-\cventry{2006-2015}{University Professor}{UC3M}{Madrid}{Spain}{<Description>} % arguments 3 to 6 are optional
-\cventry{2004-2006}{Researcher}{UC3M}{Madrid}{Spain}{<Description>} % arguments 3 to 6 are optional
+\cventry{2006-2015}{University Professor}{UC3M}{Madrid}{Spain}{
+  \begin{itemize}
+    \item Topics: programming, OSs, concurrency, protocols and networking
+    \item Technical documentation, presentations, public speaking
+    \item Course projects, small lab projects, exams
+    \item Plagirism detectors, automatic submission/evaluation systems, benchmarking
+    \item Writing and evaluation of scientific papers
+    \item Talks and presentations at scientific congresses and workshops
+    \item Team management (undergraduates and researchers)
+  \end{itemize}
+} % arguments 3 to 6 are optional
+\cventry{2004-2006}{Researcher}{UC3M}{Madrid}{Spain}{
+  \begin{itemize}
+    \item Performance evaluation of mobile devices
+    \item Performance evaluation of network protocols
+    \item Multihoming
+    \item Writing deliverables and demos
+    \item Software and hardware design and integration
+  \end{itemize}
+} % arguments 3 to 6 are optional
 
 %Section
 \section{Education}
-\cventry{2008-2012}{Ph.D. Telematics Engineering (Cum Laude)}{UC3M}{Madrid}{Spain}{\small \href{http://e-archivo.uc3m.es/bitstream/handle/10016/15108/Tesis_Alberto_Cortes_Martin.pdf?sequence=1}{My thesis} (in Spanish). Main contributions: An SCTP modification to improve handovers a synthetic filesystem for the Linux kernel to improve multihoming support and a theorem for optimizing probe scheduling for the detection of uniform radom events.\normalsize} % arguments 3 to 6 are optional
+\cventry{2008-2012}{Ph.D. Telematics Engineering (Cum Laude)}{UC3M}{Madrid}{Spain}{\small \href{http://e-archivo.uc3m.es/bitstream/handle/10016/15108/Tesis_Alberto_Cortes_Martin.pdf?sequence=1}{My thesis} (in Spanish). Main contributions: An SCTP modification to improve handovers, a synthetic filesystem for the Linux kernel to improve multihoming support and a theorem for optimizing probe scheduling for the detection of uniform radom events.\normalsize} % arguments 3 to 6 are optional
 \cventry{2005-2007}{M.Sc. Telematics Engineering}{UC3M}{Madrid}{Spain}{} % arguments 3 to 6 are optional
 \cventry{1995-2004}{B.Sc. Telecomunications Engineering (with Honours)}{UC3M}{Madrid}{Spain}{} % arguments 3 to 6 are optional
 
@@ -94,7 +132,7 @@
 
 %Section
 \section{Interests and Hobbies}
-\cvline{}{\small Playing Go (\begin{CJK}{UTF8}{min}囲碁\end{CJK}, 11kyu), Free climbing.}
+\cvline{}{\small The Go board game (\begin{CJK}{UTF8}{min}囲碁\end{CJK}, 11kyu), Free climbing, maths, Rubik's cubes, hacking and security, Science Fiction books, juggling.}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
