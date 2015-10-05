@@ -1,0 +1,3 @@
+Continuous compilation
+
+  latexmk -pdf -pvc curriculum.tex
