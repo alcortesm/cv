@@ -1,3 +1,7 @@
 Continuous compilation
 
   latexmk -pdf -pvc curriculum.tex
+
+Generate HTML
+
+  latex2html -dir /tmp/bla -split +0 curriculum.tex
