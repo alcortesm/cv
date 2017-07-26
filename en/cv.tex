@@ -25,6 +25,8 @@
 \usepackage[scale=0.8]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 
+\usepackage{xcolor}
+
 \fancyfoot{} % clear all footer fields
 \fancyfoot[L,R]{\thepage}           % page number in "outer" position of footer line
 \fancyfoot[R,L]{\footnotesize } % other info in "inner" position of footer line
@@ -50,6 +52,8 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
+
+\definecolor{link}{RGB}{0,0,160}
 
 %Section
 \section{Info}
@@ -86,19 +90,34 @@ the ins and outs of corporate life.}
 
 %Section
 \section{Computer Skills}
-\cvline{Languages}{C, C++, Java, bash, octave, Go. Some years ago: Lua, Lisp, C\#, Perl, SQL, Python, Scheme, Gopher, SR, Prolog}
+\cvline{Languages}{Go, C, Java, bash, octave, C++. Minor experience with: Python, Lua, Lisp, C\#, Perl, SQL, Scheme, Gopher, SR, Prolog}
+\cvline{Tools and Frameworks}{git (user and internals), docker, make, AMQP, mongodb, PostgreSQL, \LaTeX, vim, pthreads, tcpdump, sockets, strace, valgrind, gdb, Omnet++, GnuPlot. Some years ago: ns2, troff, Emacs, Corba}
 \cvline{OOs}{Linux, Plan9 (both in user-land and kernel). Some years ago: Windows XP, Symbian, Windows Mobile}
-\cvline{Tools and Frameworks}{make, ant, git, tmux, \LaTeX, \TeX, vim, pthreads, tcpdump, sockets, strace, valgrind, gdb, Omnet++, GnuPlot, JUnit, SWING. Some years ago: ns2, troff, Emacs, Corba}
 \cvline{Protocols}{SCTP, IPv4, TCP, UDP. Some years ago: POP3, IMAP, Telnet, HTTP, FTP, IRC, LLMNR, 802.11b/g, Ethernet}
 
 %Section
 \section{Experience}
-\cventry{2004-2015}{Researcher and University Professor}{UC3M}{Madrid}{Spain}{
+\cventry{2015-2017}{Back-End Programer}{\href{http://sourced.tech}{\color{link}{source\{d\}}}}{Madrid}{Spain}{
+  \begin{itemize}
+    \item Team of 2-5 programmers, SCRUM methodology
+    \item Worked writing Twelve-Factor apps like software about:
+      \begin{itemize}
+        \item Git internals implementation in Go (\href{https://github.com/src-d/go-git}{\color{link}{go-git}})
+        \item Abstract Syntax Trees generation and processing (\href{https://github.com/bblfsh}{\color{link}{bblfsh}})
+      \end{itemize}
+    \item Talks and blog posts:
+      \begin{itemize}
+        \item Papers we love Madrid meetup: \href{https://www.meetup.com/Papers-We-Love-Madrid/events/226986420/}{\color{link}{Diff and Blame: an intuitive overview}}
+        \item Comparing Merkle trees: \href{https://blog.sourced.tech/post/difftree/}{\color{link}{Comparing Git trees in Go}}
+      \end{itemize}
+  \end{itemize}
+}
+\cventry{2004-2015}{Researcher and University Professor}{\href{https://www.uc3m.es}{\color{link}{UC3M}}}{Madrid}{Spain}{
   \begin{itemize}
     \item My courses topics: programming, OSs, concurrency and application and transport layer network protocols
     \item Writing technical documentation, presentations, public speaking
     \item Designing/using plagiarism detectors, automatic submission/evaluation systems, code evaluation and benchmarking
-    \item Writing and evaluating scientific papers (check my \href{http://www.researcherid.com/rid/L-5343-2014}{ResearcherId} for a list of my publications)
+    \item Writing and evaluating scientific papers (check my \href{http://www.researcherid.com/rid/L-5343-2014}{\color{link}{ResearcherId}} for a list of my academic publications)
     \item Giving talks and presentations at scientific conferences and workshops
     \item Team management (undergraduates and researchers)
     \item Research projects:
