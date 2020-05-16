@@ -5,6 +5,5 @@
 *.swp
 *.fdb_latexmk
 *.fls
-*.pdf
 *.ps
 *.out

@@ -35,15 +35,14 @@
 \firstname{Alberto}
 \familyname{Cortés}
 \title{Curriculum Vit\ae}               % optional, remove the line if not wanted
-\address{Calle Estella 3, 3A}{Las Tablas, Madrid, Spain}    % optional, remove the line if not wanted
-\mobile{+34 600 42 77 57}                    % optional, remove the line if not wanted
-%\phone{+34 91 750 86 44}                      % optional, remove the line if not wanted
-%\fax{<Fax number>}                          % optional, remove the line if not wanted
 \email{alcortesm@gmail.com}                      % optional, remove the line if not wanted
-\extrainfo{Skype: alberto.cortes.martin}
+\mobile{+34 600 42 77 57}                    % optional, remove the line if not wanted
+\address{Madrid, Spain, UTC+1}    % optional, remove the line if not wanted
+%\phone{+34 ...}                      % optional, remove the line if not wanted
+%\fax{<Fax number>}                          % optional, remove the line if not wanted
+%\extrainfo{Skype: alberto.cortes.martin}
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 \photo[84pt]{../alcortes.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -63,13 +62,12 @@
 \cvline{GitHub}{\small \href{https://github.com/alcortesm}{\color{link}{https://github.com/alcortesm}} \normalsize}
 \cvline{ResearcherId}{\href{http://www.researcherid.com/rid/L-5343-2014}{\color{link}{http://www.researcherid.com/rid/L-5343-2014}} \normalsize}
 \cvline{LinkedIn}{\small \href{https://www.linkedin.com/in/alcortesm}{\color{link}{https://www.linkedin.com/in/alcortesm}} \normalsize}
-%\cvline{Driver's License}{\small \vspace{0.05ex}European type B\normalsize}
 
 %Section
 \section{Desired Employment and Skills}
 
 \cvline{}{\small
-I am looking for new job opportunities
+I am looking for full remote jobs
 as a Go programmer.
 I excel at and enjoy getting to the bottom of things
 as opposed to staying on top of things.
@@ -85,96 +83,108 @@ I feel comfortable working with the mathematics of sophisticated data structures
 \cvline{}{\small
 As part of my current career path as a developer,
 I have acquired the practical skills needed in a professional setting
-and relight my passion about programming and constant learning.
+and focus on maintainability and keeping complexity under control.
 }
 
 %Section
 \section{Computer Skills}
 \cvline{Languages}{\small
   Go,
+  bash.
+  Minor experience/previously:
+  Node.js,
   Java,
   C,
-  bash,
   octave,
+  \LaTeX,
   C++.
-  Minor experience with:
   Python,
   Lua,
   Lisp,
   C\#,
-  Perl,
-  Scheme,
-  Gopher,
   SR,
   Prolog.
 }
 
-\cvline{Tools and Frameworks}{\small
-  git (including its internals),
-  Docker,
-  AMQP,
-  Mongodb,
-  PostgreSQL,
+\cvline{Tools and Technologies}{\small
+  git (+internals),
+  Docker and docker-compose,
   make,
+  GraphQL,
+  REST,
+  AMQP (RabittMQ),
+  SQS,
+  Mongodb,
+  TSDB (InfluxDB),
+  CI/CD (CircleCI),
+  cryptography (SSH, JWT, Auth0, PGP\ldots),
+  telemetry (statsd, Grafana)
+  Minor experience/previously:
+  Graph databases (Neo4j),
+  PostgreSQL,
   pthreads,
   tcpdump,
   sockets,
   strace,
-  \LaTeX,
-  vim,
   valgrind,
   gdb,
   GnuPlot.
-  Minor experience with:
   gRPC,
   Protocol Buffers,
   MessagePack,
   ns2,
   Omnet++,
-  troff,
-  Emacs,
-  Corba.
+  troff.
 }
 
 \cvline{OSs}{\small
-  Linux,
-  Plan9 (both in user-land and kernel space).
-  Some years ago:
+  Linux (user-land and kernel).
+  Previously:
+  Plan9 (user-land and kernel),
   Windows XP,
   Symbian,
   Windows Mobile.
 }
 
 \cvline{Protocols}{\small
-  SCTP,
-  IPv4,
+  HTTP,
   TCP,
+  IPv4,
   UDP.
-  Some years ago:
+  SCTP,
   POP3,
   IMAP,
-  Telnet,
-  HTTP,
-  FTP,
-  IRC,
-  LLMNR,
   802.11b/g,
-  Ethernet
+  Ethernet\ldots
 }
 
 \newpage
 
 %Section
 \section{Experience}
-\cventry{2015-2017}{Back-End Programer}{\href{http://sourced.tech}{\color{link}{source\{d\}}}}{Madrid}{Spain}{
+
+\cventry{2017-2020}
+  {Back-End Programmer}
+  {\href{https://www.senseye.io}{\color{link}{Senseye}}}
+  {Southampton}{UK}
+  {
   \begin{itemize}
-    \item Team of 1-4 programmers, using the SCRUM methodology and following the Twelve-Factor apps principles
-    \item Designed and built a data processing pipeline in Go for analysing 17 million software repositories
-    \item Topics included:
-      \begin{itemize}
-        \item A Git internals re-implementation in Go (\href{https://github.com/src-d/go-git}{\color{link}{go-git}})
-        \item Abstract Syntax Trees generation and processing (\href{https://github.com/bblfsh}{\color{link}{bblfsh}})
-      \end{itemize}
+    \item Condition monitoring and predictive maintenance for factory assets
+    \item Full remote, team of $\approx$ 10 back-end programmers, agile methodologies
+    \item $\approx$ 70 services, $\approx$ 2-8 deploys to production per day
+    \item Common tasks:
+      adding new functionality
+      and enabling the system to scale.
+    \item Personal focus: maintainability, testing and keeping tech debt under control
+  \end{itemize}
+}
+
+\cventry{2015-2017}{Back-End Programmer}{source\{d\}}{Madrid}{Spain}{
+  \begin{itemize}
+    \item Data processing pipeline for analysing git repositories
+    \item Team of $\approx$ 1-4 programmers
+    \item A Git internals re-implementation in Go (\href{https://github.com/src-d/go-git}{\color{link}{go-git}})
+    \item Abstract Syntax Trees generation and processing (\href{https://github.com/bblfsh}{\color{link}{bblfsh}})
     \item Talks and blog posts:
       \begin{itemize}
         \item Papers We Love Madrid meetup: \href{https://www.meetup.com/Papers-We-Love-Madrid/events/226986420/}{\color{link}{Diff and Blame: an intuitive overview}}
@@ -182,6 +192,7 @@ and relight my passion about programming and constant learning.
       \end{itemize}
   \end{itemize}
 }
+
 \cventry{2004-2015}{Researcher and University Professor}{\href{https://www.uc3m.es}{\color{link}{UC3M}}}{Madrid}{Spain}{
   \begin{itemize}
     \item Teaching programming, OSs, concurrency and transport layer network protocols
@@ -217,7 +228,7 @@ and relight my passion about programming and constant learning.
 \section{Interests and Hobbies}
 
 \cvline{}{\small The Go board game (\begin{CJK}{UTF8}{min}囲碁\end{CJK},
-  11kyu), free climbing, math, Rubik's cubes, hacking, Science Fiction books, juggling.}
+  11kyu), free climbing, mini painting, Rubik's cubes, hacking, Science Fiction books, juggling.}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
