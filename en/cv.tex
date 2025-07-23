@@ -7,7 +7,7 @@
 %
 % Modded by ntrp (nitropowered@gmail.com)
 
-\documentclass[12pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -80,18 +80,17 @@ I feel comfortable working with the mathematics of sophisticated data structures
 \cvline{}{\small
 As part of my current career path as a developer,
 I have acquired the practical skills needed in a professional setting
-and focus on maintainability and keeping complexity under control.
+and focus on domain design, maintainability, and keeping complexity under control.
 }
 
 %Section
 \section{Computer Skills}
 \cvline{Languages}{\small
   expert:
-  Go (+5 years),
-  bash.
-  Intermediate/previously:
-  Java,
+  Go (+10 years),
+  Previously:
   C,
+  Java,
   octave,
   \LaTeX,
   Node.js,
@@ -106,25 +105,27 @@ and focus on maintainability and keeping complexity under control.
 
 \cvline{Tools and Technologies}{\small
   git (+internals),
-  Docker,
-  REST,
-  telemetry (Prometheus, statsd, Grafana),
   Kubernetes,
-  docker-compose,
+  Docker,
+  Mongodb,
+  Redis,
+  Clouds (AWS, GCP),
+  CI (Gitlab CI/CD, CircleCI, Github Actions...),
+  OpenTelemetry (Prometheus, Grafana),
+  S3, SQS, SNS, Google PubSub,
+  protobuf,
+  gRPC,
+  REST,
+  Istio,
+  OAuth,
   make,
   Bazel,
   AMQP (RabittMQ),
-  SQS,
-  CI/CD (CircleCI, Github Actions, Bamboo, Travis),
   cryptography (SSH, IAM, JWT, Auth0, PGP),
   Couchbase,
-  Mongodb,
   InfluxDB,
   GraphQL,
-  Clouds (AWS, GCP),
-  Graph DB (Neo4j),
   PostgreSQL,
-  Redis,
   pthreads,
   tcpdump,
   sockets,
@@ -133,7 +134,6 @@ and focus on maintainability and keeping complexity under control.
   gdb,
   GnuPlot,
   gRPC,
-  Protocol Buffers,
   MessagePack,
   ns2,
   Omnet++,
@@ -149,6 +149,7 @@ and focus on maintainability and keeping complexity under control.
 }
 
 \cvline{Protocols}{\small
+  gRPC,
   HTTP,
   TCP,
   IPv4,
@@ -165,28 +166,55 @@ and focus on maintainability and keeping complexity under control.
 %Section
 \section{Experience}
 
+\cventry{2021-2025}
+  {Back-End Senior Developer}
+  {\href{https://www.faceit.com/}{\color{link}{Faceit}}, now \href{https://https://eslfaceitgroup.com/}{\color{link}{EFG}}}
+  {full remote}
+  {UK}
+  {
+  \begin{itemize}
+%% Examples of projects:
+% - write user-api, a port from a Java monolith to a Go microservice
+% - understand, document and bring back under control two services written by an isolated developer now gone: matcher (matchmaking logic) and edge (WebSockets)
+% - help the community team to refactor lobby-api using a domain driven approach, so they can introduce new features.
+% - re-design user-api so Russian users Personal Identifiable Information can be stored in a Russian database to comply with Russian regulation
+% - design proposal for using the outbox pattern
+% - introduce strong domain design practices: optionals, immutable data types, making ilegal stats unrepresentable
+% - introduce strong unit testing practices: idioms to avoid flaky tests and to improve readability (GIVEN-WHEN-THEN)
+% - bring the drops system under control, automate many manual tasks, such as calculating drops per scheduled videos in Twitch
+% - start using OAuth for authenticating users and third-party applications
+% - propose an outbox pattern solution to ensure broker event delivery, using Debezium
+% - interview candidates
+    \item Architected and maintained distributed systems serving millions of users
+    \item Developed greenfield, brownfield, and legacy systems
+    \item Worked both in product teams and in the core platform team
+    \item Owned and maintained critical shared libraries for core infrastructure components (databases, message brokers, observability, background processing)
+    \item Established backend engineering standards and best practices for the backend guild (6 product teams $\approx$30 developers); facilitated guild meetings and mentored junior/mid-level engineers
+    \item Maintained ownership of 2-6 production services
+    \item 1-4 daily deployments to production
+    \item Technical leadership focus: maintainability, testing, domain driven design and tech debt management
+  \end{itemize}
+}
+
 \cventry{2020-2021}
-  {Back-End Programmer}
+  {Back-End Developer}
   {\href{https://www.couchbase.com/}{\color{link}{Couchbase}}}
-  {Remote}
+  {full remote}
   {US, India, UK}
   {
   \begin{itemize}
-    \item Couchbase Cloud team: Full remote, team of $\approx$ 30 engineers, agile methodologies
-    \item Main tasks: writing monitoring software for kubernetes clusters running Couchbase
-    \item Personal focus: maintainability, testing and keeping tech debt under control
+    \item Cloud team: writing monitoring software for kubernetes clusters running Couchbase
   \end{itemize}
 }
 
 \cventry{2017-2020}
-  {Back-End Programmer}
+  {Back-End Developer}
   {\href{https://www.senseye.io}{\color{link}{Senseye}}}
-  {Remote}
+  {full remote}
   {UK, US}
   {
   \begin{itemize}
     \item Condition monitoring and predictive maintenance for factory assets
-    \item Full remote, team of $\approx$ 10 back-end programmers, agile methodologies
     \item $\approx$ 100 services, $\approx$ 2-8 deploys to production per day
     \item Common tasks:
       adding new functionality
@@ -196,11 +224,10 @@ and focus on maintainability and keeping complexity under control.
 }
 
 \cventry{2015-2017}
-  {Back-End Programmer}
+  {Back-End Developer}
   {source\{d\}}{Madrid}{Spain}{
   \begin{itemize}
     \item Data processing pipeline for analysing git repositories
-    \item Team of $\approx$ 1-4 programmers
     \item A Git internals re-implementation in Go (\href{https://github.com/src-d/go-git}{\color{link}{go-git}})
     \item Abstract Syntax Trees generation and processing (\href{https://github.com/bblfsh}{\color{link}{bblfsh}})
     \item Talks and blog posts:
